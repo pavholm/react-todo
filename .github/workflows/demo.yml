@@ -1,8 +1,7 @@
 name: GitHub Actions Demo
 on:
   pull_request:
-    paths:
-      - src/components/**/**.ts
+    branches: [ master ]
 jobs:
   Explore-GitHub-Actions:
     runs-on: ubuntu-latest

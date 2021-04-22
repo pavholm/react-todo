@@ -2,8 +2,7 @@ name: test-pipeline
 
 on:
   pull_request:
-    paths:
-      - src/components/**/**.ts
+    branches: [ master ]
 
 jobs:
   student-cabinet-build-job:
