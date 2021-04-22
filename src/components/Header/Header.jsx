@@ -7,7 +7,7 @@ class Header extends React.Component {
 
         this.state = {
             text: '',
-            date: ''
+            date: '111'
         }
     }
 

@@ -1,0 +1,15 @@
+name: test-pipeline
+
+on:
+  pull_request:
+    paths:
+      - src/components/**/**.ts
+
+jobs:
+  student-cabinet-build-job:
+    if: contains(github.event.pull_request.title , 'hotfix') == false && contains(github.event.pull_request.title , 'revert') == false
+    runs-on: ubuntu-latest
+    steps:
+      - name: Get yarn cache directory path
+        id: yarn-cache-dir-path
+        run: echo "12345"
